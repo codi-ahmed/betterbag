@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Tue Aug 19 2025 16:14:08 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="www.drinkcharlies.com" data-wf-page="66db126c1d9ba03a6f94045e"
+    data-wf-site="66dab405fff44f5d08af4edb" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Store Finder</title>
+    <meta content="Store Finder" property="og:title" />
+    <meta content="Store Finder" property="twitter:title" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link
+        href="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/css/charlies-organics-h45.webflow.shared.f8c6ca355.css"
+        rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">WebFont.load({ google: { families: ["Inconsolata:400,700"] } });</script>
+    <script
+        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+    <link
+        href="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67dc37427ed34a68ef2b7f5e_faviconcharlies.png"
+        rel="shortcut icon" type="image/x-icon" />
+    <link
+        href="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67dc36f01097830d97d5c03a_Favicon%20charlies.png"
+        rel="apple-touch-icon" />
+    <link href="https://www.drinkcharlies.com/store-finder" rel="canonical" />
+    <style>
+        .grained {
+            position: fixed !important;
+        }
+
+        #grain {
+            pointer-events: none;
+        }
+
+        [text-split] {
+            opacity: 0;
+        }
+
+        html.w-editor [text-split] {
+            opacity: 1;
+        }
+
+        .word {
+            overflow: hidden;
+            padding-bottom: 0.1em;
+            padding-right: 0.1em;
+            margin-bottom: -0.5em;
+            transform-origin: bottom;
+        }
+
+        .btn-magnetic__click .btn-magnetic__text-p {
+            transition: all 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+            transform: translateY(0%) rotate(0.001deg);
+        }
+
+        .btn-magnetic__click:hover .btn-magnetic__text-p {
+            transform: translateY(-100%) rotate(0.001deg);
+        }
+    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '543077188802269');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=543077188802269&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body data-scroll="">
+    <div class="page-wrapper">
+        <div class="global-styles w-embed">
+            <style>
+                /* Make text look crisper and more legible in all browsers */
+                body {
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-smoothing: antialiased;
+                    text-rendering: optimizeLegibility;
+                }
+
+                /* Focus state style for keyboard navigation for the focusable elements */
+                *[tabindex]:focus-visible,
+                input[type="file"]:focus-visible {
+                    outline: 0.125rem solid #4d65ff;
+                    outline-offset: 0.125rem;
+                }
+
+                /* Set color style to inherit */
+                .inherit-color * {
+                    color: inherit;
+                }
+
+                /* Get rid of top margin on first element in any rich text element */
+                .w-richtext> :not(div):first-child,
+                .w-richtext>div:first-child> :first-child {
+                    margin-top: 0 !important;
+                }
+
+                /* Get rid of bottom margin on last element in any rich text element */
+                .w-richtext>:last-child,
+                .w-richtext ol li:last-child,
+                .w-richtext ul li:last-child {
+                    margin-bottom: 0 !important;
+                }
+
+
+                /* Make sure containers never lose their center alignment */
+                .container-medium,
+                .container-small,
+                .container-large {
+                    margin-right: auto !important;
+                    margin-left: auto !important;
+                }
+
+                /* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+                /*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+                /* Apply "..." after 3 lines of text */
+                .text-style-3lines {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                }
+
+                /* Apply "..." after 2 lines of text */
+                .text-style-2lines {
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                /* These classes are never overwritten */
+                .hide {
+                    display: none !important;
+                }
+
+                @media screen and (max-width: 991px) {
+
+                    .hide,
+                    .hide-tablet {
+                        display: none !important;
+                    }
+                }
+
+                @media screen and (max-width: 767px) {
+                    .hide-mobile-landscape {
+                        display: none !important;
+                    }
+                }
+
+                @media screen and (max-width: 479px) {
+                    .hide-mobile {
+                        display: none !important;
+                    }
+                }
+
+                .margin-0 {
+                    margin: 0rem !important;
+                }
+
+                .padding-0 {
+                    padding: 0rem !important;
+                }
+
+                .spacing-clean {
+                    padding: 0rem !important;
+                    margin: 0rem !important;
+                }
+
+                .margin-top {
+                    margin-right: 0rem !important;
+                    margin-bottom: 0rem !important;
+                    margin-left: 0rem !important;
+                }
+
+                .padding-top {
+                    padding-right: 0rem !important;
+                    padding-bottom: 0rem !important;
+                    padding-left: 0rem !important;
+                }
+
+                .margin-right {
+                    margin-top: 0rem !important;
+                    margin-bottom: 0rem !important;
+                    margin-left: 0rem !important;
+                }
+
+                .padding-right {
+                    padding-top: 0rem !important;
+                    padding-bottom: 0rem !important;
+                    padding-left: 0rem !important;
+                }
+
+                .margin-bottom {
+                    margin-top: 0rem !important;
+                    margin-right: 0rem !important;
+                    margin-left: 0rem !important;
+                }
+
+                .padding-bottom {
+                    padding-top: 0rem !important;
+                    padding-right: 0rem !important;
+                    padding-left: 0rem !important;
+                }
+
+                .margin-left {
+                    margin-top: 0rem !important;
+                    margin-right: 0rem !important;
+                    margin-bottom: 0rem !important;
+                }
+
+                .padding-left {
+                    padding-top: 0rem !important;
+                    padding-right: 0rem !important;
+                    padding-bottom: 0rem !important;
+                }
+
+                .margin-horizontal {
+                    margin-top: 0rem !important;
+                    margin-bottom: 0rem !important;
+                }
+
+                .padding-horizontal {
+                    padding-top: 0rem !important;
+                    padding-bottom: 0rem !important;
+                }
+
+                .margin-vertical {
+                    margin-right: 0rem !important;
+                    margin-left: 0rem !important;
+                }
+
+                .padding-vertical {
+                    padding-right: 0rem !important;
+                    padding-left: 0rem !important;
+                }
+            </style>
+        </div>
+        <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-out"
+            data-easing2="ease-in" role="banner" class="nav_component w-nav">
+            <div class="nav_container">
+                <div class="nav_socials hide-tablet"><a href="https://www.instagram.com/drinkcharlies/" target="_blank"
+                        class="nav_social-item w-inline-block">
+                        <div class="nav_icon-bg"></div><img
+                            src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dad3c38b4909b55d36eaf5_Instagram.svg"
+                            loading="lazy" alt="" class="icon-1x1-small" />
+                    </a></div><a href="index.html" class="nav_brand w-nav-brand"><img
+                        src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                        loading="lazy" data-w-id="00c7bfbb-d6ab-dc2f-226b-39f5ef21add2" alt="" class="nav_logo" /></a>
+                <nav role="navigation" class="nav_menu w-nav-menu">
+                    <a href="index.html#products" class="menu-link">Products</a>
+                    <a href="index.html#story" class="menu-link">Our Story</a>
+                    <a href="faq.html" class="menu-link">FAQ</a>
+                    <a href="contact.html" class="menu-link">Contact</a>
+                    <a href="store-finder.html" aria-current="page" class="menu-link w--current">Order</a>
+                    <div class="menu_tablet-links">
+                        <div class="nav_socials"><a href="#" class="nav_social-item w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dad3c37a2504bd3a08c5f6_Facebook.svg"
+                                    loading="lazy" alt="" class="icon-1x1-medium" /></a><a href="#"
+                                class="nav_social-item w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dad3c38b4909b55d36eaf5_Instagram.svg"
+                                    loading="lazy" alt="" class="icon-1x1-small" /></a></div>
+                    </div>
+                    <div class="menu-bg"></div>
+                </nav>
+                <div class="nav_button w-nav-button">
+                    <div data-is-ix2-target="1" class="nav-lottie" data-w-id="00c7bfbb-d6ab-dc2f-226b-39f5ef21ade6"
+                        data-animation-type="lottie"
+                        data-src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/6787c0624923ef307a2eb924_Menu%20(3).json"
+                        data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0"
+                        data-duration="0.5" data-ix2-initial-state="0"></div>
+                </div>
+                <div class="hide-tablet">
+                    <div data-wf--button--variant="white" class="btn-magnetic"><a data-magnetic-strength-inner="15"
+                            data-magnetic-strength="30" href="store-finder.html" aria-current="page"
+                            class="btn-magnetic__click w-inline-block w--current">
+                            <div class="btn-magnetic__fill w-variant-26c605d3-8e3a-66cf-246a-f86332ae6574"></div>
+                            <div data-magnetic-inner-target="" class="btn-magnetic__content">
+                                <div class="btn-magnetic__text">
+                                    <p class="btn-magnetic__text-p w-variant-26c605d3-8e3a-66cf-246a-f86332ae6574">Order
+                                    </p>
+                                    <p
+                                        class="btn-magnetic__text-p w-variant-26c605d3-8e3a-66cf-246a-f86332ae6574 is--duplicate">
+                                        Order</p>
+                                </div>
+                            </div>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+        <main class="main-wrapper">
+            <section class="section_default-hero">
+                <div class="padding-global">
+                    <div class="container-large">
+                        <div class="heading_wrapper">
+                            <h1 words-slide-up="" text-split="" class="heading-style-h1">Storefinder</h1><img
+                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66db13f84899dbf5d5ab3de2_world.avif"
+                                loading="lazy" sizes="(max-width: 1233px) 100vw, 1233px"
+                                srcset="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66db13f84899dbf5d5ab3de2_world-p-500.avif 500w, https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66db13f84899dbf5d5ab3de2_world.avif 1233w"
+                                alt="" class="hero_img-globe" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="section_default">
+                <div class="padding-global padding-section-medium">
+                    <div class="container-large">
+                        <h2 letters-slide-up="" text-split="" class="heading-style-h2">Country:</h2>
+                        <div fs-cmsfilter-element="filters" class="w-form">
+                            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form"
+                                data-wf-page-id="66db126c1d9ba03a6f94045e"
+                                data-wf-element-id="f1d6be26-3a42-3a7b-82b1-ae00c34f6989"
+                                data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e"><label fs-cmsfilter-clear="countries"
+                                    checked="" fs-cmsfilter-element="clear" class="filter-button w-radio">
+                                    <div
+                                        class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-field w-radio-input w--redirected-checked">
+                                    </div><input type="radio" data-name="Country" id="All" name="Country"
+                                        style="opacity:0;position:absolute;z-index:-1" checked="" value="All" /><span
+                                        class="radio-label w-form-label" for="All">All COuntries</span>
+                                </label>
+                                <div class="w-dyn-list">
+                                    <div role="list" class="country-list w-dyn-items">
+                                        <div role="listitem" class="collection-item w-dyn-item"><label
+                                                class="filter-button w-radio">
+                                                <div
+                                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-field w-radio-input">
+                                                </div><input type="radio" name="Country" data-name="Country"
+                                                    id="the Netherlands" style="opacity:0;position:absolute;z-index:-1"
+                                                    value="Radio" /><span fs-cmsfilter-field="countries"
+                                                    class="radio-label w-form-label" for="radio">the Netherlands</span>
+                                            </label></div>
+                                        <div role="listitem" class="collection-item w-dyn-item"><label
+                                                class="filter-button w-radio">
+                                                <div
+                                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-field w-radio-input">
+                                                </div><input type="radio" name="Country" data-name="Country"
+                                                    id="Belgium" style="opacity:0;position:absolute;z-index:-1"
+                                                    value="Radio" /><span fs-cmsfilter-field="countries"
+                                                    class="radio-label w-form-label" for="radio">Belgium</span>
+                                            </label></div>
+                                        <div role="listitem" class="collection-item w-dyn-item"><label
+                                                class="filter-button w-radio">
+                                                <div
+                                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-field w-radio-input">
+                                                </div><input type="radio" name="Country" data-name="Country"
+                                                    id="Denmark" style="opacity:0;position:absolute;z-index:-1"
+                                                    value="Radio" /><span fs-cmsfilter-field="countries"
+                                                    class="radio-label w-form-label" for="radio">Denmark</span>
+                                            </label></div>
+                                        <div role="listitem" class="collection-item w-dyn-item"><label
+                                                class="filter-button w-radio">
+                                                <div
+                                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-field w-radio-input">
+                                                </div><input type="radio" name="Country" data-name="Country" id="Czech"
+                                                    style="opacity:0;position:absolute;z-index:-1" value="Radio" /><span
+                                                    fs-cmsfilter-field="countries" class="radio-label w-form-label"
+                                                    for="radio">Czech</span>
+                                            </label></div>
+                                        <div role="listitem" class="collection-item w-dyn-item"><label
+                                                class="filter-button w-radio">
+                                                <div
+                                                    class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-field w-radio-input">
+                                                </div><input type="radio" name="Country" data-name="Country"
+                                                    id="Slovakia" style="opacity:0;position:absolute;z-index:-1"
+                                                    value="Radio" /><span fs-cmsfilter-field="countries"
+                                                    class="radio-label w-form-label" for="radio">Slovakia</span>
+                                            </label></div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="w-form-done">
+                                <div>Thank you! Your submission has been received!</div>
+                            </div>
+                            <div class="w-form-fail">
+                                <div>Oops! Something went wrong while submitting the form.</div>
+                            </div>
+                        </div>
+                        <div class="w-dyn-list">
+                            <div fs-cmsfilter-element="list" role="list" class="store-grid w-dyn-items">
+                                <div role="listitem" class="w-dyn-item"><a
+                                        href="https://www.ah.nl/zoeken?query=charlie%27s%20organics" target="_blank"
+                                        class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/66db17fa34500d96945b7a60_layer1.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Albert Heijn</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a
+                                        href="https://www.jumbo.com/producten/?searchType=keyword&amp;searchTerms=charlie%27s+organics"
+                                        target="_blank" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/66db197dfee3311250cc617b_layer-1.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Jumbo</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="https://www.hoogvliet.com/"
+                                        target="_blank" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bac21053194326e02dc8c_Hoogvliet_logo.png"
+                                                loading="lazy" alt="" sizes="100vw"
+                                                srcset="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bac21053194326e02dc8c_Hoogvliet_logo-p-500.png 500w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bac21053194326e02dc8c_Hoogvliet_logo-p-800.png 800w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bac21053194326e02dc8c_Hoogvliet_logo-p-1080.png 1080w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bac21053194326e02dc8c_Hoogvliet_logo-p-1600.png 1600w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bac21053194326e02dc8c_Hoogvliet_logo-p-2000.png 2000w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bac21053194326e02dc8c_Hoogvliet_logo.png 2715w"
+                                                class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Hoogvliet</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679babf4161c885a77a3ea2b_svg0%202.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Plus</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679babb6b9bb469a906994dc_Deka_logo_2021.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Dekamarkt</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bac7eb79e10a38cf54432_Poiesz%20Supermarkten%20B.V._idYNjaxdxC_1.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Poiesz</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bac9d883831a486c3c195_Picnic_idsiSnmfUv_1.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Picnic</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bacc2afeacfae86264fef_idPgojDe60_1738255547202.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Flink</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="https://www.ekoplaza.nl/nl/foodmarqt"
+                                        target="_blank" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bacd7415e653b282e8119_id0_nO8_sF_1738255570480.png"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Ekoplaza Food Marqt</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="https://www.bidfood.nl/webshop/"
+                                        target="_blank" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bad4ff45270c64b98d3fa_id2ioSSqaO_1738255617641.png"
+                                                loading="lazy" alt="" sizes="100vw"
+                                                srcset="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bad4ff45270c64b98d3fa_id2ioSSqaO_1738255617641-p-500.png 500w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/679bad4ff45270c64b98d3fa_id2ioSSqaO_1738255617641.png 591w"
+                                                class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Bidfood</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="https://www.sligro.nl/home.html"
+                                        target="_blank" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b14dad1414ad41efd92_sligro.png"
+                                                loading="lazy" alt="" sizes="100vw"
+                                                srcset="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b14dad1414ad41efd92_sligro-p-500.png 500w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b14dad1414ad41efd92_sligro-p-800.png 800w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b14dad1414ad41efd92_sligro-p-1080.png 1080w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b14dad1414ad41efd92_sligro.png 1240w"
+                                                class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Sligro</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="https://www.lekkerland.com/en/"
+                                        target="_blank" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Lekkerland</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="https://www.hanos.nl/nl/"
+                                        target="_blank" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b1c933f673af51fc820_hanos_logo.png"
+                                                loading="lazy" alt="" sizes="100vw"
+                                                srcset="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b1c933f673af51fc820_hanos_logo-p-500.png 500w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b1c933f673af51fc820_hanos_logo.png 692w"
+                                                class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Hanos</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">VHC</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="https://www.makro.nl/" target="_blank"
+                                        class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b28c32f2b4b65fe89fd_Makro_Europe_logo.png"
+                                                loading="lazy" alt="" sizes="100vw"
+                                                srcset="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b28c32f2b4b65fe89fd_Makro_Europe_logo-p-500.png 500w, https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/67d17b28c32f2b4b65fe89fd_Makro_Europe_logo.png 640w"
+                                                class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Makro</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Zegro</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Van Dijk Groothandel</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Foohandelsplaza Venlo</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Groothandel Zuid-Nederland</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Scheerder Drankengroothandel</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">the Netherlands</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Bio-Planet</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">Belgium</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Teta</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">Slovakia</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Søstrene Grene</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">Denmark</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Rohlík.cz</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">Czech</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Tamda</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">Czech</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a href="#" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg"
+                                                loading="lazy" alt="" class="placeholder-img w-dyn-bind-empty" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">The Candy Store</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">Czech</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a
+                                        href="https://www.jumbo.com/producten/?searchType=keyword&amp;searchTerms=charlie%27s+organics"
+                                        target="_blank" class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/66db197dfee3311250cc617b_layer-1.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Jumbo</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">Belgium</div>
+                                    </a></div>
+                                <div role="listitem" class="w-dyn-item"><a
+                                        href="https://www.ah.nl/zoeken?query=charlie%27s%20organics" target="_blank"
+                                        class="store_card w-inline-block">
+                                        <div class="store_card-img"><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67cea500e52540fc4346f61b_Charlie%20organics.svg"
+                                                loading="lazy" alt=""
+                                                class="placeholder-img w-condition-invisible" /><img
+                                                src="https://cdn.prod.website-files.com/66dabe4fe2fdbb07d092f829/66db17fa34500d96945b7a60_layer1.svg"
+                                                loading="lazy" alt="" class="placeholder-img" /><img
+                                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674ec08d87a636434c5fdb0f_topright-arrow.svg"
+                                                loading="lazy" alt="" class="store-arrow" /></div>
+                                        <div class="store_card-text">Albert Heijn</div>
+                                        <div fs-cmsfilter-field="countries" class="hide">Belgium</div>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="section-footer">
+            <div class="padding-global padding-section-small">
+                <div class="container-large">
+                    <div class="footer-component">
+                        <div class="_2col-grid">
+                            <div id="w-node-ec691d91-5f0a-e55f-8496-2b33294b2f11-294b2f0c" class="footer_text-wrapper">
+                                <p words-slide-up="" text-split="" class="text-size-medium">Enjoy the pure, organic
+                                    taste of Charlie’s – no added sugars, no nonsense, just refreshment in a fully
+                                    recyclable can</p><img
+                                    src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/6745ca6cec81ee7fac907794_drip.svg"
+                                    loading="lazy" alt="" class="footer_drip" />
+                            </div><img
+                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67471d8adf80dd6be4682802_footer-img.svg"
+                                loading="eager" id="w-node-ec691d91-5f0a-e55f-8496-2b33294b2f18-294b2f0c" alt=""
+                                class="footer_img" />
+                            <div class="footer-links"><a href="#" class="footer-link">Products</a><a href="#"
+                                    class="footer-link">Our story</a><a href="/faq" class="footer-link">FAQ</a><a
+                                    href="#" class="footer-link">Contact</a><a href="/store-finder" aria-current="page"
+                                    class="footer-link w--current">Order</a></div>
+                        </div>
+                        <div class="footer-marquee"><img
+                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/6745c83eed8b5149d602d8b9_intro_img.avif"
+                                loading="lazy" alt="" class="footer_marquee-img" />
+                            <div class="footer_marquee-text">Drink Charlie</div><img
+                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66db13f84899dbf5d5ab3de2_world.avif"
+                                loading="lazy" sizes="(max-width: 1233px) 100vw, 1233px"
+                                srcset="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66db13f84899dbf5d5ab3de2_world-p-500.avif 500w, https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66db13f84899dbf5d5ab3de2_world.avif 1233w"
+                                alt="" class="footer_marquee-img" />
+                            <div class="footer_marquee-text">Follow us</div><img
+                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/6745c83eed8b5149d602d8b9_intro_img.avif"
+                                loading="lazy" alt="" class="footer_marquee-img" />
+                            <div class="footer_marquee-text">Drink Charlie</div><img
+                                src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66db13f84899dbf5d5ab3de2_world.avif"
+                                loading="lazy" sizes="(max-width: 1233px) 100vw, 1233px"
+                                srcset="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66db13f84899dbf5d5ab3de2_world-p-500.avif 500w, https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66db13f84899dbf5d5ab3de2_world.avif 1233w"
+                                alt="" class="footer_marquee-img" />
+                            <div class="footer_marquee-text">Follow us</div>
+                        </div>
+                        <div class="footer_bottom">
+                            <div>©2025</div><a
+                                href="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/67dc36536d2d3cc665928760_Privacyverklaring%20Winacties%20%26%20Promoties%20Charlie%27s.pdf"
+                                target="_blank" class="footer-legal-link">Privacyvoorwaarden</a><a
+                                href="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/688770357969bd46a8ef665d_Actievoorwaarden%20template%202025.pdf"
+                                target="_blank" class="footer-legal-link">Actievoorwaarden</a><a
+                                href="https://www.mrboost.nl" target="_blank" class="credits-link w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/674dd520260b1fb9027e22e2_heart.svg"
+                                    loading="lazy" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66dab405fff44f5d08af4edb"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/js/webflow.schunk.57d5559d2f0cd9f8.js"
+        type="text/javascript"></script>
+    <script src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/js/webflow.schunk.0ca09f7cbba218e9.js"
+        type="text/javascript"></script>
+    <script src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/js/webflow.schunk.b4435221be879eb3.js"
+        type="text/javascript"></script>
+    <script src="https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/js/webflow.a8246626.5805942627458621.js"
+        type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/timothydesign/script/split-type.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+        // Select all elements with the 'magnetic' attribute
+        const magneticElements = document.querySelectorAll('[magnetic]');
+
+        magneticElements.forEach(element => {
+            // Add an event listener for mouse movement over the element
+            element.addEventListener('mousemove', (e) => {
+                // Get the element's bounding rectangle dimensions and position on each mousemove event
+                const boundingRect = element.getBoundingClientRect();
+
+                // Calculate mouse position relative to the element
+                const mousePosX = e.x - boundingRect.left; // X position
+                const mousePosY = e.y - boundingRect.top;  // Y position
+
+                // Use GSAP to animate the element for a magnetic effect
+                gsap.to(element, {
+                    x: (mousePosX - boundingRect.width / 2) * 0.4, // Move horizontally towards mouse
+                    y: (mousePosY - boundingRect.height / 2) * 0.4, // Move vertically towards mouse
+                    duration: 0.6, // Reduced duration for a smoother animation
+                    ease: 'power3.out' // Easing function for smooth animation
+                });
+            });
+
+            // Add an event listener for when the mouse leaves the element area
+            element.addEventListener('mouseleave', () => {
+                // Animate the element back to its original position
+                gsap.to(element, {
+                    x: 0, // Reset horizontal position
+                    y: 0, // Reset vertical position
+                    duration: 0.6, // Reduced duration for smoother return
+                    ease: 'power3.out' // Smoother easing function
+                });
+            });
+        });
+    </script>
+    <script>
+        const lenis = new Lenis({
+            duration: 1.8, // Animation duration (seconds)
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
+            smooth: true, // Enable smooth scrolling
+            direction: 'vertical', // Vertical scroll (use 'horizontal' for horizontal scrolling)
+            gestureDirection: 'vertical', // Gesture scroll direction
+        });
+
+        // Animation loop
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/grained@0.0.2/grained.min.js"></script>
+    <script>
+        var options = {
+            animate: true,
+            patternWidth: 100,
+            patternHeight: 100,
+            grainOpacity: 0.05,
+            grainDensity: 1,
+            grainWidth: 1,
+            grainHeight: 1
+        };
+
+        grained("#grain", options);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            // Split text into spans by words and chars
+            new SplitType("[text-split]", { types: "words, chars", tagName: "span" });
+
+            // Function to create ScrollTrigger timelines
+            function createScrollTrigger(triggerElement, timeline) {
+                ScrollTrigger.create({
+                    trigger: triggerElement,
+                    start: "top bottom",
+                    onLeaveBack: () => { timeline.progress(0).pause(); }
+                });
+                ScrollTrigger.create({
+                    trigger: triggerElement,
+                    start: "top 60%",
+                    onEnter: () => timeline.play()
+                });
+            }
+
+            // Animate text with 'letters-slide-up' attribute
+            gsap.utils.toArray("[letters-slide-up]").forEach((el) => {
+                let tl = gsap.timeline({ paused: true })
+                    .from(el.querySelectorAll(".char"), {
+                        yPercent: 100, duration: 0.2, ease: "power1.out", stagger: { amount: 0.6 }
+                    });
+                createScrollTrigger(el, tl);
+            });
+
+            // Avoid flash of unstyled content
+            gsap.set("[text-split]", { opacity: 1 });
+        });
+    </script>
+
+    <script>
+        const introWrapper = document.querySelector('[bubbles]');
+
+        introWrapper.addEventListener('mousemove', (event) => {
+            createBubble(event.clientX, event.clientY);
+        });
+
+        function createBubble(x, y) {
+            // Get the position relative to the introWrapper
+            const rect = introWrapper.getBoundingClientRect();
+            const bubbleX = x - rect.left;
+            const bubbleY = y - rect.top;
+
+            // Create an SVG element for the bubble
+            const bubble = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            bubble.setAttribute('width', '40'); // Doubled size
+            bubble.setAttribute('height', '40'); // Doubled size
+            bubble.setAttribute('viewBox', '0 0 100 100'); // Adjust dimensions if needed
+            bubble.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+            bubble.classList.add('bubble');
+            bubble.style.position = 'absolute';
+            bubble.style.left = `${bubbleX}px`;
+            bubble.style.top = `${bubbleY}px`;
+            bubble.style.pointerEvents = 'none';
+            bubble.style.zIndex = '1000'; // Ensure it appears above other elements
+
+            // Add the custom path to the SVG
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute(
+                'd',
+                'M928.554,0a11.414,11.414,0,0,1,10.413,7.943c.61,1.717.011,3.834.155,5.754.1,1.4,1.09,2.984.683,4.132-.728,2.05-1.782,4.732-3.469,5.534a26.872,26.872,0,0,1-10.27,2.5C919.783,26.1,913,19.8,913.6,14.457c.576-5.1,3.333-10.3,9.034-12.466C924.58,1.251,926.58.659,928.554,0m.482,17.932A31.631,31.631,0,0,0,932.313,17c.376-.144.884-.938.773-1.2a47.546,47.546,0,0,0-2.939-6.084,26.829,26.829,0,0,0-3.159-3.61c-1.539,2.132-3.641,4.069-4.463,6.449-.854,2.474,2.84,5.373,6.51,5.376'
+            );
+            path.setAttribute('fill', '#96D8EA'); // Updated color
+            path.setAttribute('transform', 'translate(-913.566)'); // Optional: Remove or adjust if needed
+            bubble.appendChild(path);
+
+            // Append the bubble to the intro-wrapper
+            introWrapper.appendChild(bubble);
+
+            // Animate the bubble with GSAP
+            gsap.fromTo(
+                bubble,
+                {
+                    y: 0,
+                    opacity: 1, // Start fully visible
+                    scale: Math.random() * 0.5 + 0.5, // Random scale for variety
+                    rotation: Math.random() * 360, // Random rotation
+                },
+                {
+                    y: -100, // Float upwards
+                    opacity: 0, // Fade out
+                    duration: 1.5,
+                    ease: 'power2.out',
+                    onComplete: () => bubble.remove(), // Remove bubble after animation
+                }
+            );
+        }
+    </script>
+    <script>
+        const menuLinks = document.querySelectorAll(".menu-link");
+        const menuBg = document.querySelector(".menu-bg");
+
+        menuLinks.forEach((link) => {
+            link.addEventListener("mouseenter", (e) => {
+                const linkRect = link.getBoundingClientRect();
+                const parentRect = link.parentNode.getBoundingClientRect();
+
+                gsap.to(menuBg, {
+                    x: linkRect.left - parentRect.left, // Adjust to the hovered link's position
+                    y: linkRect.top - parentRect.top, // Align to the hovered link's top
+                    width: linkRect.width, // Match the hovered link's width
+                    height: linkRect.height, // Match the hovered link's height
+                    duration: 0.3,
+                    ease: "power3.out",
+                });
+            });
+        });
+
+        // Reset background when not hovering over any link
+        document.querySelector(".nav_menu").addEventListener("mouseleave", () => {
+            gsap.to(menuBg, {
+                width: 0, // Hide the background
+                duration: 0.3,
+                ease: "power3.out",
+            });
+        });
+
+
+        function initMagneticEffect() {
+            const magnets = document.querySelectorAll('[data-magnetic-strength]');
+            if (window.innerWidth <= 991) return;
+
+            // Mouse move
+            function moveMagnet(event) {
+                const magnet = event.currentTarget;
+                const bounding = magnet.getBoundingClientRect();
+                const strength = parseFloat(magnet.getAttribute('data-magnetic-strength')) || 25; // When no amount defined
+                const innerTarget = magnet.querySelector('[data-magnetic-inner-target]');
+                const innerStrength = parseFloat(magnet.getAttribute('data-magnetic-strength-inner')) || strength;
+
+                const offsetX = ((event.clientX - bounding.left) / magnet.offsetWidth - 0.5) * (strength / 16);
+                const offsetY = ((event.clientY - bounding.top) / magnet.offsetHeight - 0.5) * (strength / 16);
+
+                // Outer animation
+                gsap.to(magnet, {
+                    x: offsetX + "em",
+                    y: offsetY + "em",
+                    rotate: "0.001deg",
+                    ease: "power4.out",
+                    duration: 1.6,
+                });
+
+                // Inner animation (only if innerTarget exists)
+                if (innerTarget) {
+                    const innerOffsetX = ((event.clientX - bounding.left) / magnet.offsetWidth - 0.5) * (innerStrength / 16);
+                    const innerOffsetY = ((event.clientY - bounding.top) / magnet.offsetHeight - 0.5) * (innerStrength / 16);
+
+                    gsap.to(innerTarget, {
+                        x: innerOffsetX + "em",
+                        y: innerOffsetY + "em",
+                        rotate: "0.001deg",
+                        ease: "power4.out",
+                        duration: 2,
+                    });
+                }
+            }
+
+            // Mouse leave
+            function resetMagnet(event) {
+                const magnet = event.currentTarget;
+                const innerTarget = magnet.querySelector('[data-magnetic-inner-target]');
+
+                // Reset outer magnet
+                gsap.to(magnet, {
+                    x: "0em",
+                    y: "0em",
+                    ease: "elastic.out(1, 0.3)",
+                    duration: 1.6,
+                    clearProps: "all"
+                });
+
+                // Reset inner magnet (only if innerTarget exists)
+                if (innerTarget) {
+                    gsap.to(innerTarget, {
+                        x: "0em",
+                        y: "0em",
+                        ease: "elastic.out(1, 0.3)",
+                        duration: 2,
+                        clearProps: "all"
+                    });
+                }
+            }
+
+            // Attach event listeners
+            magnets.forEach(magnet => {
+                magnet.addEventListener('mousemove', moveMagnet);
+                magnet.addEventListener('mouseleave', resetMagnet);
+            });
+        }
+
+        // Initialize Magnetic Effect
+        document.addEventListener('DOMContentLoaded', () => {
+            initMagneticEffect();
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (window.innerWidth <= 991) { // Only runs on mobile & tablet
+
+                const navButton = document.querySelector(".w-nav-button");
+                const navMenu = document.querySelector(".w-nav-menu");
+                const menuLinks = document.querySelectorAll(".w-nav-menu a");
+                const webflowNavbar = document.querySelector(".w-nav"); // Webflow Navbar
+
+                let isOpen = false;
+
+                // GSAP Initial State
+                gsap.set(navMenu, { opacity: 0, y: "-20px", display: "none" });
+
+                function openMenu() {
+                    gsap.to(navMenu, {
+                        opacity: 1,
+                        y: "0px",
+                        display: "block",
+                        duration: 0.4,
+                        ease: "power2.out",
+                    });
+
+                    gsap.fromTo(menuLinks,
+                        { opacity: 0, y: 10 },
+                        { opacity: 1, y: 0, duration: 0.2, stagger: 0.1, ease: "power2.out" }
+                    );
+
+                    webflowNavbar.classList.add("w--open"); // Ensure Webflow knows menu is open
+                    isOpen = true;
+                }
+
+                function closeMenu() {
+                    gsap.to(navMenu, {
+                        opacity: 0,
+                        y: "-20px",
+                        duration: 0.3,
+                        ease: "power2.in",
+                        onComplete: () => {
+                            navMenu.style.display = "none"; // Hide menu after animation
+                        }
+                    });
+
+                    webflowNavbar.classList.remove("w--open");
+                    isOpen = false;
+                }
+
+                // Toggle menu
+                navButton.addEventListener("click", () => {
+                    isOpen ? closeMenu() : openMenu();
+                });
+
+                // Close menu when clicking a menu link
+                menuLinks.forEach((link) => {
+                    link.addEventListener("click", closeMenu);
+                });
+            }
+        });
+    </script><!-- [Attributes by Finsweet] CMS Filter -->
+    <script async src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsfilter@1/cmsfilter.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            // Split text into spans
+            let typeSplit = new SplitType("[text-split]", {
+                types: "words, chars",
+                tagName: "span"
+            });
+
+            // Link timelines to scroll position
+            function createScrollTrigger(triggerElement, timeline) {
+                // Reset tl when scroll out of view past bottom of screen
+                ScrollTrigger.create({
+                    trigger: triggerElement,
+                    start: "top bottom",
+                    onLeaveBack: () => {
+                        timeline.progress(0);
+                        timeline.pause();
+                    }
+                });
+                // Play tl when scrolled into view (60% from top of screen)
+                ScrollTrigger.create({
+                    trigger: triggerElement,
+                    start: "top 60%",
+                    onEnter: () => timeline.play()
+                });
+            }
+
+            $("[words-slide-up]").each(function (index) {
+                let tl = gsap.timeline({ paused: true });
+                tl.from($(this).find(".word"), { rotate: 8, opacity: 0, yPercent: 100, duration: 0.3, ease: "Power2.out", stagger: { amount: 0.5 } });
+                createScrollTrigger($(this), tl);
+            });
+
+            // Avoid flash of unstyled content
+            gsap.set("[text-split]", { opacity: 1 });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const filterButtons = document.querySelectorAll(".filter-button");
+
+            if (filterButtons.length > 0) {
+                // Set the first filter-button to have white text by default
+                filterButtons[0].style.color = "white";
+            }
+
+            filterButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    // Reset text color for all filter-buttons
+                    filterButtons.forEach(btn => {
+                        btn.style.color = "#22546e"; // Reset others to default color
+                    });
+
+                    // Set clicked button's text color to white
+                    button.style.color = "white";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
