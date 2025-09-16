@@ -1,0 +1,13 @@
+<!-- White Outline Gift Icon -->
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" role="img" aria-label="Gift icon" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Box -->
+  <rect x="2.5" y="7.5" width="19" height="12" rx="1.2"></rect>
+  <!-- Ribbon horizontal -->
+  <path d="M2.5 11.5h19"></path>
+  <!-- Ribbon vertical -->
+  <path d="M12 7.5v12"></path>
+  <!-- Left bow -->
+  <path d="M12 6c.6-1.6.8-2 2.2-2.6C16 2.9 17 3.6 17 5c0 1.2-.9 2.2-2.1 2.6"></path>
+  <!-- Right bow -->
+  <path d="M12 6c-.6-1.6-.8-2-2.2-2.6C8 2.9 7 3.6 7 5c0 1.2.9 2.2 2.1 2.6"></path>
+</svg>
