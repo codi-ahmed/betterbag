@@ -2175,7 +2175,7 @@ textarea.w-input, textarea.w-select {
 }
 
 body {
-  background-color: var(--background-color--primary);
+  background-color: #fcfcf7;
   color: var(--text-color--primary);
   font-family: Lunchbox, Palatino Linotype, sans-serif;
   font-size: 1rem;

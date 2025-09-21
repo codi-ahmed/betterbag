@@ -259,7 +259,7 @@
 
         body {
             color: #333;
-            background-color: #fff;
+            background-color: #fcfcf7;
             min-height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
@@ -1017,8 +1017,58 @@ border-radius: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    background-color: rgba(190, 190, 190, 0.364);
+    margin-top: 5rem;
+    background-color: white;
+}
+
+.headline-track {
+  display: flex;
+  white-space: nowrap;
+}
+
+.headline-text {
+  display: flex;
+  animation: scrollText 25s linear infinite;
+}
+
+.headline-text span {
+  font-size: 8rem;
+  font-weight: bold;
+  padding-right: 3rem; /* space between repeats */
+}
+
+/* keyframes for seamless loop */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* only half, since we duplicated text */
+  }
+}
+
+.choice-main{
+    display: flex;
+    flex-direction:column ;
+    width: 95%;
+    margin-top: 5rem;
+
+
+}
+
+.dashed-line{
+    min-height: 5rem;
+    width: 100%;
+    margin-top: 3rem;
+    border-top: 2px dashed black;
+}
+
+
+.inner-choice-main{
+    display: flex;
+flex-direction: row;
+gap: 5rem;
+
 }
 
 .section-comparison{
@@ -2872,8 +2922,8 @@ display: flex;
         }
 
         body {
-            background-color: var(--background-color--primary);
-            color: var(--text-color--primary);
+            background-color: white;
+            color: black;
             font-family: Lunchbox, Palatino Linotype, sans-serif;
             font-size: 1rem;
             font-weight: 700;
