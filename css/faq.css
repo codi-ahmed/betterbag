@@ -1,7 +1,27 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font-family: sans-serif;
+ font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
+}
+
+@font-face {
+    font-family: "Marfa";
+    src: url("/fonts/Marfa.woff2") format("woff2"),
+        url("/fonts/Marfa.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    /* shows system font until Marfa is ready */
+}
+
+/* declare Marfa Fallback (if this is a distinct design, weight, or variable) */
+@font-face {
+    font-family: "Marfa Fallback";
+    src: url("/fonts/MarfaFallback.woff2") format("woff2"),
+        url("/fonts/MarfaFallback.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -224,7 +244,7 @@ body {
   background-color: #fcfcf7;
   min-height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+    font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1422,7 +1442,7 @@ textarea.w-input, textarea.w-select {
   -webkit-tap-highlight-color: transparent;
   background: #000000e6;
   outline: 0;
-  font-family: Helvetica Neue, Helvetica, Ubuntu, Segoe UI, Verdana, sans-serif;
+    font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
@@ -2042,59 +2062,21 @@ textarea.w-input, textarea.w-select {
 }
 
 @font-face {
-  font-family: Supernett Cn;
-  src: url("https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dabff0a87cf9914f2a0252_Supernett%20cn%20Bold%20Italic.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: Supernett Cn;
-  src: url("https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dabff1cb51116e4517b0de_Supernett%20cn%20Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: Supernett Cn;
-  src: url("https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dabff05161d0e3375a23c0_Supernett%20cn%20Italic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: Supernett Cn;
-  src: url("https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dabff1363df6a4772ebe5f_Supernett%20cn.otf") format("opentype");
+  font-family: "Stroy";
+  src: url("/fonts/Stroy.woff2") format("woff2"),
+       url("/fonts/Stroy.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: Lunchbox;
-  src: url("https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dabff7a8e9a9049592643c_LunchBox-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: Lunchbox;
-  src: url("https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dabff704907353003f0949_LunchBox-Light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: Lunchbox;
-  src: url("https://cdn.prod.website-files.com/66dab405fff44f5d08af4edb/66dabff7b4704445ce0b1df4_LunchBox.otf") format("opentype");
+  font-family: "Stroy Fallback";
+  src: url("/fonts/StroyFallback.woff2") format("woff2"),
+       url("/fonts/StroyFallback.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 :root {
@@ -2177,7 +2159,7 @@ textarea.w-input, textarea.w-select {
 body {
   background-color: var(--background-color--primary);
   color: var(--text-color--primary);
-  font-family: Lunchbox, Palatino Linotype, sans-serif;
+ font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
@@ -2234,7 +2216,7 @@ h6 {
 
 p {
   margin-bottom: 0;
-  font-family: Supernett Cn, Impact, sans-serif;
+ font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-style: italic;
   font-weight: 700;
 }
@@ -2968,7 +2950,7 @@ figcaption {
   min-height: 3rem;
   margin-bottom: .75rem;
   padding: .5rem 1rem;
-  font-family: Supernett Cn, Impact, sans-serif;
+font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 1rem;
   font-style: italic;
   font-weight: 400;
@@ -3755,7 +3737,7 @@ figcaption {
 }
 
 .store_card-text {
-  font-family: Supernett Cn, Impact, sans-serif;
+  font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 700;
@@ -3808,7 +3790,7 @@ figcaption {
   width: 400%;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
-  font-family: Supernett Cn, Impact, sans-serif;
+font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 3.5rem;
   font-style: italic;
   font-weight: 400;
@@ -3904,7 +3886,7 @@ figcaption {
   text-transform: uppercase;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-family: Lunchbox, Palatino Linotype, sans-serif;
+ font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
@@ -3986,7 +3968,7 @@ figcaption {
 .steps_title {
   text-transform: none;
   flex: 1;
-  font-family: Supernett Cn, Impact, sans-serif;
+font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 3.3125rem;
   font-style: italic;
   font-weight: 700;
@@ -4258,7 +4240,7 @@ figcaption {
   margin-top: .5rem;
   margin-bottom: .5rem;
   padding: .75rem .75rem .5rem;
-  font-size: 1.25rem;
+  font-size: .85rem;
   text-decoration: none;
   display: block;
   position: relative;
@@ -4541,7 +4523,7 @@ figcaption {
   justify-content: flex-start;
   align-items: center;
   padding: .5rem .5rem .25rem;
-  font-family: Supernett Cn, Impact, sans-serif;
+font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 1.125rem;
   font-style: italic;
   font-weight: 700;
@@ -4677,7 +4659,7 @@ figcaption {
 }
 
 .faq-rte {
-  font-family: Supernett Cn, Impact, sans-serif;
+ font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 1rem;
   font-style: italic;
   font-weight: 700;
@@ -4872,7 +4854,7 @@ figcaption {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  font-family: Supernett Cn, Impact, sans-serif;
+font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 2.5rem;
   line-height: 1;
   display: flex;
@@ -5003,7 +4985,7 @@ figcaption {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 0;
-  font-family: Lunchbox, Palatino Linotype, sans-serif;
+   font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
