@@ -1,7 +1,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
- font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
+  font-family: "Inter", Arial, sans-serif !important;
 }
 
 body {
@@ -218,32 +218,14 @@ td, th {
 html {
   height: 100%;
 }
-@font-face {
-    font-family: "Marfa";
-    src: url("/fonts/Marfa.woff2") format("woff2"),
-        url("/fonts/Marfa.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    /* shows system font until Marfa is ready */
-}
 
-/* declare Marfa Fallback (if this is a distinct design, weight, or variable) */
-@font-face {
-    font-family: "Marfa Fallback";
-    src: url("/fonts/MarfaFallback.woff2") format("woff2"),
-        url("/fonts/MarfaFallback.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
 body {
   color: #333;
   background-color: #fff;
   min-height: 100%;
   margin: 0;
-  font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
+  font-family: "Inter", Arial, sans-serif !important;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1441,7 +1423,7 @@ textarea.w-input, textarea.w-select {
   -webkit-tap-highlight-color: transparent;
   background: #000000e6;
   outline: 0;
- font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
+   font-family: "Inter", Arial, sans-serif !important;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
@@ -2158,7 +2140,7 @@ textarea.w-input, textarea.w-select {
 body {
   background-color: #fcfcf7;
   color: var(--text-color--primary);
- font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
+  font-family: "Inter", Arial, sans-serif !important;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
@@ -4984,7 +4966,7 @@ figcaption {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 0;
- font-family: "Marfa", "Marfa Fallback", Arial, sans-serif  !important;
+  font-family: "Inter", Arial, sans-serif !important;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
