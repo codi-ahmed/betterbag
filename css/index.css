@@ -1,7 +1,65 @@
+@font-face {
+    font-family: marfa;
+    src: url(/fonts/e57b2665b6721274-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: marfa;
+    src: url(/fonts/132a3c73002d795f-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: marfa Fallback;
+    src: local("Arial");
+    ascent-override: 89.37%;
+    descent-override: 24.00%;
+    line-gap-override: 0.00%;
+    size-adjust: 107.08%
+}
+
+@font-face {
+    font-family: stroy;
+    src: url(/fonts/9c9533f89da153b8-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: stroy;
+    src: url(/fonts/aabfdd77d4dda7f6-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: stroy;
+    src: url(/fonts/7f673afc1973feef-s.p.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: stroy Fallback;
+    src: local("Arial");
+    ascent-override: 71.49%;
+    descent-override: 19.77%;
+    line-gap-override: 0.00%;
+    size-adjust: 131.49%
+}
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-  font-family: "Inter", Arial, sans-serif;
+font-family: "Marfa", "Marfa Fallback", Arial, sans-serif;
+
 }
 
 
@@ -263,7 +321,8 @@ body {
     background-color: #fcfcf7;
     min-height: 100%;
     margin: 0;
-   font-family: "Inter", Arial, sans-serif;
+font-family: "Marfa", "Marfa Fallback", Arial, sans-serif;
+
     font-size: 14px;
     line-height: 20px;
 }
@@ -2185,7 +2244,8 @@ textarea.w-select {
     -webkit-tap-highlight-color: transparent;
     background: #000000e6;
     outline: 0;
-  font-family: "Inter", Arial, sans-serif !important;
+font-family: "Marfa", "Marfa Fallback", Arial, sans-serif;
+
     font-size: 17px;
     font-style: normal;
     font-weight: 300;
@@ -2922,7 +2982,8 @@ textarea.w-select {
 body {
     background-color: white;
     color: black;
-  font-family: "Inter", Arial, sans-serif !important;
+font-family: "Marfa", "Marfa Fallback", Arial, sans-serif;
+
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5;
@@ -4675,8 +4736,9 @@ figcaption {
     text-transform: uppercase;
     padding-left: 1rem;
     padding-right: 1rem;
-  font-family: "Inter", Arial, sans-serif !important;
-    font-size: 1.5rem;
+font-family: "Marfa", "Marfa Fallback", Arial, sans-serif;
+
+    font-size: .89rem;
     font-style: normal;
     font-weight: 700;
 }
@@ -4755,10 +4817,11 @@ figcaption {
 }
 
 .steps_title {
+    margin-top: 1rem;
     text-transform: none;
     flex: 1;
  font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
-    font-size: 3.3125rem;
+    font-size: 2rem;
     font-style: italic;
     font-weight: 700;
     line-height: 1.18;
@@ -5645,7 +5708,7 @@ figcaption {
     justify-content: flex-start;
     align-items: center;
    font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     line-height: 1;
     display: flex;
 }
@@ -5775,7 +5838,8 @@ figcaption {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 0;
-   font-family: "Inter", Arial, sans-serif !important;
+font-family: "Marfa", "Marfa Fallback", Arial, sans-serif;
+
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
@@ -6899,7 +6963,7 @@ figcaption {
 
     .steps_title {
         margin-bottom: 0;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .steps_button {
