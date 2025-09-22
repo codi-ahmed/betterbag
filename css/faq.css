@@ -101,7 +101,7 @@ b, strong {
 }
 
 dfn {
-  font-style: italic;
+font-style: normal;
 }
 
 h1 {
@@ -2255,7 +2255,7 @@ h6 {
 p {
   margin-bottom: 0;
  font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
-  font-style: italic;
+font-style: normal;
   font-weight: 700;
 }
 
@@ -2990,7 +2990,7 @@ figcaption {
   padding: .5rem 1rem;
 font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 1rem;
-  font-style: italic;
+ font-style: normal;
   font-weight: 400;
   line-height: 2;
   overflow: hidden;
@@ -3409,7 +3409,7 @@ font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 25.5rem;
+  max-width: 27.5rem;
   margin-bottom: 4rem;
   margin-left: auto;
   margin-right: auto;
@@ -3777,7 +3777,7 @@ font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
 .store_card-text {
   font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 1.5rem;
-  font-style: italic;
+font-style: normal;
   font-weight: 700;
 }
 
@@ -3830,7 +3830,7 @@ font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   padding-bottom: 1.5rem;
 font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 3.5rem;
-  font-style: italic;
+font-style: normal;
   font-weight: 400;
   line-height: 1;
   display: flex;
@@ -4008,7 +4008,7 @@ font-family: "Marfa", "Marfa Fallback", Arial, sans-serif;
   flex: 1;
 font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 3.3125rem;
-  font-style: italic;
+font-style: normal;
   font-weight: 700;
   line-height: 1.18;
 }
@@ -4563,7 +4563,7 @@ font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   padding: .5rem .5rem .25rem;
 font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 1.125rem;
-  font-style: italic;
+font-style: normal;
   font-weight: 700;
   display: flex;
 }
@@ -4699,7 +4699,7 @@ font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
 .faq-rte {
  font-family: "Stroy", "Stroy Fallback", Arial, sans-serif;
   font-size: 1rem;
-  font-style: italic;
+font-style: normal;
   font-weight: 700;
   line-height: 2;
 }
