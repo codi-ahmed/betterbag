@@ -13,20 +13,16 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
     <!-- in <head> -->
-<!-- Google Fonts: Inter -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
-        <link rel="preload" href="/fonts/132a3c73002d795f-s.p.woff2" as="font" crossorigin=""
-        type="font/woff2" />
-    <link rel="preload" href="/fonts/7f673afc1973feef-s.p.woff2" as="font" crossorigin=""
-        type="font/woff2" />
-    <link rel="preload" href="/fonts/9c9533f89da153b8-s.p.woff2" as="font" crossorigin=""
-        type="font/woff2" />
-    <link rel="preload" href="/fonts/aabfdd77d4dda7f6-s.p.woff2" as="font" crossorigin=""
-        type="font/woff2" />
-    <link rel="preload" href="fonts\e57b2665b6721274-s.p.woff2" as="font" crossorigin=""
-        type="font/woff2" />
+    <link rel="preload" href="/fonts/132a3c73002d795f-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload" href="/fonts/7f673afc1973feef-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload" href="/fonts/9c9533f89da153b8-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload" href="/fonts/aabfdd77d4dda7f6-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+    <link rel="preload" href="fonts\e57b2665b6721274-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">WebFont.load({ google: { families: ["Inconsolata:400,700"] } });</script>
@@ -294,7 +290,7 @@ a,
                 }
             </style>
         </div>
-        <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-out"
+        <!-- <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease-out"
             data-easing2="ease-in" role="banner" class="nav_component w-nav">
             <div class="nav_container">
                 <div class="nav_socials hide-tablet"><a href="" target="_blank" class="nav_social-item w-inline-block">
@@ -317,6 +313,9 @@ a,
                     </div>
                     <div class="menu-bg"></div>
                 </nav>
+
+               
+
                 <div class="nav_button w-nav-button">
                     <div data-is-ix2-target="1" class="nav-lottie" data-w-id="dc0447d8-1a83-819d-267e-387f4828ab11"
                         data-animation-type="lottie" data-src="json/menu.json" data-loop="0" data-direction="1"
@@ -340,7 +339,61 @@ a,
                         </a></div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+        <!-- my navbar  -->
+         <nav class="navbar">
+                    <div class="nav-desktop">
+                        <div class="nav-container">
+                            <a class="nav-logo" href="/" aria-label="Home">
+                                <!-- Your SVG logo -->
+                               <img src="Better Bag/logo/logo-bg2.png" alt="" style="width: 50%; height: 50%;">
+                            </a>
+                            <div class="nav-links">
+                                <a href="#">Product</a>
+                                <a href="contact.html">Contact</a>
+                                <a href="/faq.html">Faq</a>
+                            </div>
+                            <button class="btn-work">Let's work</button>
+                        </div>
+                        <a href="store-finder.html"><button class="cart-btn">🛒</button></a>
+                        
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="nav-mobile">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a href="/" class="mobile-logo">
+                            <svg class="w-20 h-auto" width="50%" height="50%" viewBox="0 0 305 72"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M290.846 38.5019L289.892 38.219L290.867 38.0252C299.718 36.2337 305 29.5601 305 20.1835C305 8.46537 297.612 0.895996 286.182 0.895996H256.75V70.2828H274.436L274.265 45.7465H277.71C283.459 45.7465 286.25 48.7166 286.25 54.8193V70.2828H303.739V57.8889C303.739 47.7004 299.282 40.9953 290.846 38.5019ZM280.496 30.3039H274.447V14.3428H281.295C285.077 14.3428 287.516 17.2657 287.516 21.7969C287.516 27.2028 284.958 30.3039 280.496 30.3039Z"
+                                    fill=""></path>
+                                <path
+                                    d="M102.387 0.890503V70.2773H117.52V32.5928L131.611 70.2773H149.215V0.890503H134.086V38.7898L119.995 0.890503H102.387Z"
+                                    fill=""></path>
+                                <path
+                                    d="M228.655 42.8233H243.97V27.454H228.655V16.1707H250.243V0.890503H210.969V70.2773H251.483V55.0024H228.655V42.8233Z"
+                                    fill=""></path>
+                                <path
+                                    d="M17.6863 43.7138H35.6632V28.3498H17.6863V16.1707H43.1756V0.890503H0V70.2773H17.6863V43.7138Z"
+                                    fill=""></path>
+                                <path
+                                    d="M205.698 34.9605C205.698 13.3106 196.131 0.890503 179.462 0.890503H156.93V70.2773H179.462C196.136 70.2773 205.698 57.4015 205.698 34.9605ZM175.897 56.5896H174.497V14.5835H175.897C183.311 14.5835 187.073 21.6028 187.073 35.4582C187.073 54.5361 179.259 56.5896 175.897 56.5896Z"
+                                    fill=""></path>
+                                <path
+                                    d="M97.1936 35.4058C97.1936 12.9072 87.7305 0 71.2374 0C54.7443 0 45.0996 13.0696 45.0996 34.9606C45.0996 57.9725 54.6302 71.1678 71.2374 71.1678C87.8446 71.1678 97.1936 58.1297 97.1936 35.4006V35.4058ZM69.5098 13.9863C74.5267 13.5725 77.5358 20.2199 78.7654 34.3843C80.0365 49.0516 78.1843 56.7101 73.2504 57.1501C73.1051 57.1606 72.9651 57.1658 72.825 57.1658C66.0597 57.1658 64.0519 42.5247 63.4967 36.1287C62.2619 21.8962 64.2853 14.4421 69.5098 13.9811V13.9863Z"
+                                    fill=""></path>
+                            </svg>
+                        </a>
+                        <button class="cart-btn">🛒</button>
+                    </div>
+                </nav>
+
         <main class="main-wrapper">
             <section class="section_home-hero">
                 <div data-w-id="e7921dd2-77da-8772-62b7-be3dc95b629d"
@@ -568,27 +621,151 @@ a,
                         </div>
                     </div>
                 </div>
-    </div>
+   
     </section>
+
+    <section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1 class="hero-title">Shop solutions for growing brands</h1>
+      <p class="hero-subtitle">❶ Build your cart ❷ Connect with our team ❸ Start your project</p>
+    </div>
+    <a href="" class="scroll-link">
+    <button class="hero-button">
+      <svg viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M4.15845 12.1364L4.15845 0.640869L5.84204 0.640869L5.84204 12.1365L8.64937 9.32915L9.83984 10.5196L5.00027 15.3592L0.160694 10.5196L1.35117 9.32915L4.15845 12.1364Z" />
+      </svg>
+    </button>
+    </a>
+  </div>
+</section>
+
+    <section class="solutions-section">
+  <div class="solutions-grid">
+    
+    <!-- Card 1 -->
+    <div class="card">
+      <a class="card-link" href="/solutions/brand-audit">
+        <div class="card-image-wrapper">
+          <img
+            alt=""
+            loading="lazy"
+            width="100"
+            height="100"
+            decoding="async"
+            class="card-image"
+            src="Better Bag/Size L (12_x7_x22_ 17 Micron)/Angle 1-06.png"
+          />
+          <div class="card-circle">
+            <div class="circle-hover"></div>
+            <svg
+              class="circle-icon"
+              width="100%"
+              height="100%"
+              viewBox="0 0 16 12"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.90429 0.5V5.81849H12.5581L9.75077 3.01116L10.9412 1.82069L15.7808 6.66026L10.9412 11.4998L9.75077 10.3094L12.5581 7.50208H0.220703V0.5H1.90429Z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Brand Experience Audit</h3>
+          <div class="price-info">
+            <h5>$2,000</h5>
+            <p>2 Weeks</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <a class="card-link" href="/solutions/brand-build">
+        <div class="card-image-wrapper">
+          <img
+            alt=""
+            loading="lazy"
+            width="100"
+            height="100"
+            decoding="async"
+            class="card-image"
+            src="Better Bag/Size L (12_x7_x22_ 17 Micron)/Angle 2-06.png"
+          />
+          <div class="badge">Best Seller</div>
+          <div class="card-circle">
+            <div class="circle-hover"></div>
+            <svg
+              class="circle-icon"
+              width="100%"
+              height="100%"
+              viewBox="0 0 16 12"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.90429 0.5V5.81849H12.5581L9.75077 3.01116L10.9412 1.82069L15.7808 6.66026L10.9412 11.4998L9.75077 10.3094L12.5581 7.50208H0.220703V0.5H1.90429Z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Brand Build</h3>
+          <div class="price-info">
+            <h5>$25,000</h5>
+            <p>6–8 Weeks</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-project">
+<section class="custom-project-section">
+  <div class="custom-project-container">
+    <div class="custom-project-text">
+      <h2>Custom Project</h2>
+      <div class="custom-project-content">
+        <p>
+          If you have something specific in mind, we’re all ears. Connect with our
+          team to build a tailored approach.
+        </p>
+        <button class="custom-btn">Start a project</button>
+      </div>
+    </div>
+    <img 
+      src="https://cdn.sanity.io/images/zob55qdr/production/67fd527efe2eb335c17fc8dabb88b31ecb7966b8-3157x1968.jpg" 
+      alt="Custom Project Image" 
+      class="custom-project-img"
+    />
+  </div>
+</section>
+</div>
+
     <div id="introduction" class="section-intro">
-        <h1 class="intro-heading">Do you want better Bags</h1>
-        <h1 class="intro-heading">Lower Cost: that Save $6/day,$180/day,</h1>
-        <h1 class="intro-heading">$2190 + A YEAR</h1>
+        <h2 class="intro-heading" style="max-width: 80%;">Do you want to save money on premium bags? faster Free shipping? Annual saving of $2000+?</h2>
+        <h1 class="intro-heading"></h1>
+        <h1 class="intro-heading"></h1>
         <br>
-        <p class="intro-sub-heading">Stroger, Thicker, Heavy-duty premium bags --- from just $0.036/bag</p>
+        <p class="intro-sub-heading">Our pricing and quality are a direct answer to your questions. We give you more for less.</p>
         <div class="intro-container">
             <div class="intro-sub-container">
-                <p class="one-sub-intro-heading" style="color: #00b100;">700</p>
+                <img src="Better Bag/logo/l 1.png" alt="logo 1" style="width: 75px; border-radius: 50%; margin-bottom: 1rem;">
+                <p class="one-sub-intro-heading">700</p>
                 <p class="two-sub-intro-heading">Bags Per Box</p>
                 <p class="three-sub-intro-heading">More Value,fewer orders</p>
             </div>
-            <div class="intro-sub-container" style="background-color: #00b100;">
+            <div class="intro-sub-container" >
+                <img src="Better Bag/logo/logo 2.png" alt="logo 1" style="width: 75px; border-radius: 50%; margin-bottom: 1rem;">
                 <p class="one-sub-intro-heading">$0.036</p>
                 <p class="two-sub-intro-heading">Per bag</p>
                 <p class="three-sub-intro-heading">Exact cost(Size s 700 bags)</p>
             </div>
             <div class="intro-sub-container">
-                <p class="one-sub-intro-heading" style="color: #00b100;">$2k+</p>
+                <img src="Better Bag/logo/logo 3.png" alt="logo 1" style="width: 75px; border-radius: 50%; margin-bottom: 1rem;">
+                <p class="one-sub-intro-heading" >$2k+</p>
                 <p class="two-sub-intro-heading">Annual Savings</p>
                 <p class="three-sub-intro-heading">vs traditional bags</p>
             </div>
@@ -603,9 +780,11 @@ a,
 
     <div id="choice" class="section-choice">
         <div class="headline-track">
-            <div class="headline-text" >
-                <p style="text-transform: uppercase; font-size: 12.5rem; font-weight: 900;">Why BetterBag+ is a better choice? Let me explain.</p>
-                <p style="text-transform: uppercase;  font-size: 12.5rem; font-weight: 900; ">Why BetterBag+ is a better choice? Let me explain.</p>
+            <div class="headline-text">
+                <p style="text-transform: uppercase; font-size: 12.5rem; font-weight: 900;">Why BetterBag+ is a better
+                    choice? Let me explain.</p>
+                <p style="text-transform: uppercase;  font-size: 12.5rem; font-weight: 900; ">Why BetterBag+ is a better
+                    choice? Let me explain.</p>
             </div>
         </div>
 
@@ -614,7 +793,8 @@ a,
             <div style="display: flex; flex-direction: row; justify-content: center;">
                 <P style="width: 15%;"></P>
                 <P style="width: 60%;"></P>
-                 <p style="font-size: 1rem ; font-weight: 700; width: 25%; ">OTHERS COMPETITORS</p></div>
+                <p style="font-size: 1rem ; font-weight: 700; width: 25%; ">OTHERS COMPETITORS</p>
+            </div>
             <div class="inner-choice-main">
                 <div class="inner-choice-h " style="width: 15%;">
                     <p style="font-size: 2rem;">Thickness</p>
@@ -635,7 +815,7 @@ a,
                 </div>
                 <div class="inner-choice-og"
                     style="display: flex; flex-direction: column; justify-content: center;  width: 25%; ">
-                   
+
                     <p style="font-size: 1.25rem;">10–12 microns</p>
                     <p style="font-size: .85rem;">(weak, splits easily)</p>
                 </div>
@@ -673,7 +853,7 @@ a,
                         without compromising on quality. While other bags may look cheaper upfront, they often cost more
                         in the long run because they tear easily and come in smaller box counts — meaning you buy more,
                         more often. BetterBag+ is built stronger and lasts longer, so every cent you spend goes further.
-                       </p>
+                    </p>
 
                 </div>
                 <div class="inner-choice-og"
@@ -816,7 +996,8 @@ a,
         </div>
 
         <div class="comparison-forth">
-            <h2 style="font-weight: bolder; text-align: center; width: 100%;">You save $6/day → $180/month → $2,190+ annually</h2>
+            <h2 style="font-weight: bolder; text-align: center; width: 100%;">You save $6/day → $180/month → $2,190+
+                annually</h2>
             <h4>Based on 300 bags per day usage ($0.02 per bag difference)</h4>
         </div>
 
@@ -976,9 +1157,8 @@ a,
                                              img\mask\Mask Group 119-p-2000.png 2000w,
                                              img\mask\Mask Group 119.avif  4422w" alt="" src="img\Mask Group.avif"
                                                             loading="lazy" class="can-bg" /> -->
-                                                            <img loading="lazy"
-                                                            src="img\1.avif" alt="" class="splash-bg" />
-                                                        </div>
+                                                        <img loading="lazy" src="img\1.avif" alt="" class="splash-bg" />
+                                                    </div>
 
                                                 </div>
 
@@ -1042,8 +1222,8 @@ a,
                                              img\mask\Mask Group 119-p-2000.png 2000w,
                                              img\mask\Mask Group 119.avif  4422w" alt="" src="img\Mask Group.avif"
                                                             loading="lazy" class="can-bg" /> -->
-                                                            <img loading="lazy"
-                                                            src="img\1.avif" alt="" class="splash-bg" /></div>
+                                                        <img loading="lazy" src="img\1.avif" alt="" class="splash-bg" />
+                                                    </div>
 
                                                 </div>
 
@@ -1107,8 +1287,8 @@ a,
                                              img\mask\Mask Group 119-p-2000.png 2000w,
                                              img\mask\Mask Group 119.avif  4422w" alt="" src="img\Mask Group.avif"
                                                             loading="lazy" class="can-bg" /> -->
-                                                            <img loading="lazy"
-                                                            src="img\1.avif" alt="" class="splash-bg" /></div>
+                                                        <img loading="lazy" src="img\1.avif" alt="" class="splash-bg" />
+                                                    </div>
 
                                                 </div>
 
@@ -1173,8 +1353,8 @@ a,
                                              img\mask\Mask Group 119-p-2000.png 2000w,
                                              img\mask\Mask Group 119.avif  4422w" alt="" src="img\Mask Group.avif"
                                                             loading="lazy" class="can-bg" /> -->
-                                                            <img loading="lazy"
-                                                            src="img\1.avif" alt="" class="splash-bg" /></div>
+                                                        <img loading="lazy" src="img\1.avif" alt="" class="splash-bg" />
+                                                    </div>
 
                                                 </div>
 
@@ -1226,8 +1406,8 @@ a,
                                              img\mask\Mask Group 119-p-2000.png 2000w,
                                              img\mask\Mask Group 119.avif  4422w" alt="" src="img\Mask Group.avif"
                                                             loading="lazy" class="can-bg" /> -->
-                                                            <img loading="lazy"
-                                                            src="img\1.avif" alt="" class="splash-bg" /></div>
+                                                        <img loading="lazy" src="img\1.avif" alt="" class="splash-bg" />
+                                                    </div>
 
                                                 </div>
 
@@ -1282,8 +1462,8 @@ a,
                                              img\mask\Mask Group 119-p-2000.png 2000w,
                                              img\mask\Mask Group 119.avif  4422ww" alt="" src="img\Mask Group.avif"
                                                             loading="lazy" class="can-bg" /> -->
-                                                            <img loading="lazy"
-                                                            src="img\1.avif" alt="" class="splash-bg" /></div>
+                                                        <img loading="lazy" src="img\1.avif" alt="" class="splash-bg" />
+                                                    </div>
 
                                                 </div>
 
@@ -2076,7 +2256,7 @@ a,
                 <div class="intro_text-wrapper">
                     <div class="intro_outer-wrapper is-label">
                         <div class="intro_horizontal-line" style="padding-bottom: 1rem;">
-                            <div class="info-label" >The product</div>
+                            <div class="info-label">The product</div>
                             <br>
                             <div class="info-label is-white">Mission</div>
                         </div>
@@ -2486,7 +2666,7 @@ a,
         });
     </script>
 
-    <script>
+    <!-- <script>
         const introWrapper = document.querySelector('[bubbles]');
 
         introWrapper.addEventListener('mousemove', (event) => {
@@ -2543,7 +2723,10 @@ a,
                 }
             );
         }
-    </script>
+    </script> -->
+
+
+<!-- bubble effect -->
     <script>
         const menuLinks = document.querySelectorAll(".menu-link");
         const menuBg = document.querySelector(".menu-bg");
